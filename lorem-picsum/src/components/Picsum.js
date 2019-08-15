@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Picsum = props => {
+  console.log('i received the following: ', props)
+
   return (
     <div className='picsum'>
-      {props.temp}
+      {props.picsum.id}
     </div>
   );
 };

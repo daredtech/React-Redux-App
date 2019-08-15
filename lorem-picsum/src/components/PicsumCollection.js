@@ -7,8 +7,11 @@ const PicsumCollection = props => {
     console.log('props received: ', props)
   return (
     <>
-    <Picsum temp={props.temp}/>
+    {/* <Picsum picsums={props.picsums}/> */}
     <button onClick={props.getData}> get images </button>
+
+    {props.picsums && props.picsums.map(pic => <Picsum key={pic.id} picsum={pic} />)}
+
     </>
   );
 };
