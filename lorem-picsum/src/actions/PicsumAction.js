@@ -10,12 +10,12 @@ export const getData = () => {
       axios
         .get('https://picsum.photos/v2/list')
 
-        .then(res => {
-          console.log(res);
-          dispatch({ type: GET_PICSUM_DATA_SUCCESS, payload: '' });
+        .then(result => {
+          console.log(result);
+          dispatch({ type: GET_PICSUM_DATA_SUCCESS, payload: result.data });
         })
 
-        .catch(err => {
+        .catch(error => {
           dispatch({ type: GET_PICSUM_DATA_FAILURE, payload: '' });
         });
     };
