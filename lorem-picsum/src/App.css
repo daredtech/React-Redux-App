@@ -1,4 +1,21 @@
 .App {
   text-align: center;
 }
+.picsumcollection{
+  margin: 5%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: space-around;
+}
 
+.picsum{
+  margin: 1%;
+}
+
+button{
+  width: 150px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.967);
+}

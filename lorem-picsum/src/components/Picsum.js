@@ -5,7 +5,8 @@ const Picsum = props => {
 
   return (
     <div className='picsum'>
-      {props.picsum.id}
+       <img height='300px' src={props.picsum.download_url+'?grayscale'} />
+      {/* {props.picsum.author} */}
     </div>
   );
 };
